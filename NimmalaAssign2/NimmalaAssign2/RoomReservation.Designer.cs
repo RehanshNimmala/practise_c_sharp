@@ -114,12 +114,13 @@ namespace NimmalaAssign2
             // 
             // btnReset
             // 
+            this.btnReset.BackColor = System.Drawing.Color.Blue;
             this.btnReset.Location = new System.Drawing.Point(509, 129);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(195, 23);
             this.btnReset.TabIndex = 8;
             this.btnReset.Text = "Reset";
-            this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.UseVisualStyleBackColor = false;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // btnExit
