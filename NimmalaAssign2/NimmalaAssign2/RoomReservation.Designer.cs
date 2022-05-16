@@ -40,6 +40,7 @@ namespace NimmalaAssign2
             this.btnReset = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.btnDisplayReservationReport = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblCustomerName
@@ -47,7 +48,7 @@ namespace NimmalaAssign2
             this.lblCustomerName.AutoSize = true;
             this.lblCustomerName.Location = new System.Drawing.Point(102, 80);
             this.lblCustomerName.Name = "lblCustomerName";
-            this.lblCustomerName.Size = new System.Drawing.Size(109, 17);
+            this.lblCustomerName.Size = new System.Drawing.Size(104, 16);
             this.lblCustomerName.TabIndex = 0;
             this.lblCustomerName.Text = "Customer Name";
             // 
@@ -56,7 +57,7 @@ namespace NimmalaAssign2
             this.lblNumberOfHours.AutoSize = true;
             this.lblNumberOfHours.Location = new System.Drawing.Point(102, 129);
             this.lblNumberOfHours.Name = "lblNumberOfHours";
-            this.lblNumberOfHours.Size = new System.Drawing.Size(114, 17);
+            this.lblNumberOfHours.Size = new System.Drawing.Size(105, 16);
             this.lblNumberOfHours.TabIndex = 1;
             this.lblNumberOfHours.Text = "Number of hours";
             // 
@@ -123,12 +124,14 @@ namespace NimmalaAssign2
             // 
             // btnExit
             // 
+            this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnExit.ForeColor = System.Drawing.Color.Red;
             this.btnExit.Location = new System.Drawing.Point(509, 173);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(195, 23);
             this.btnExit.TabIndex = 9;
             this.btnExit.Text = "Exit";
-            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnDisplayReservationReport
@@ -141,11 +144,20 @@ namespace NimmalaAssign2
             this.btnDisplayReservationReport.UseVisualStyleBackColor = true;
             this.btnDisplayReservationReport.Click += new System.EventHandler(this.btnDisplayReservationReport_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(551, 338);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 16);
+            this.label1.TabIndex = 11;
+            // 
             // RoomReservation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnDisplayReservationReport);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnReset);
@@ -177,6 +189,7 @@ namespace NimmalaAssign2
         private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnDisplayReservationReport;
+        private System.Windows.Forms.Label label1;
     }
 }
 
